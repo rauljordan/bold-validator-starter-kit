@@ -34,6 +34,7 @@ docker pull ghcr.io/rauljordan/nitro:bold
 VALIDATOR_DIR="honest-validator"
 if [ "$EVIL_MODE" = true ]; then
     VALIDATOR_DIR="evil-validator"
+    CONFIG_FILE="evil_validator_config.json"
 fi
 
 # Change to the validator directory
