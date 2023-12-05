@@ -64,7 +64,7 @@ Then, start your validator
 Evil validators at the moment intercept all Arbitrum deposit transactions to the inbox that have a value of 1M gwei, or 0.001 ETH. To modify the amount to intercept, change **all instances** of `evil-intercept-deposit-gwei` in your `evil-validator/evil_validator_config.json` to a different amount of gwei. If you want to bridge some ETH to the inbox with a value that will be intercepted, you can run:
 
 ```
-./bridge_eth.sh --gwei-to-deposit=1000000 --private-key $EVIL_PRIV_KEY --eth-rpc-endpoint $SEPOLIA_ENDPOINT
+./bridge_eth.sh --gwei-to-deposit 1000000 --private-key $EVIL_PRIV_KEY --eth-rpc-endpoint $SEPOLIA_ENDPOINT
 ```
 
 The above will send an ETH deposit to an Arbitrum inbox contract of 1M gwei, which is the default value the evil validator is configured to maliciously tweak.
