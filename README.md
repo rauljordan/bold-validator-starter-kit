@@ -4,42 +4,30 @@ This repository contains two docker compose setups for validators in Arbitrum BO
 
 ## Running
 
-You can choose to run either an honest or an evil validator on Ethereum sepolia. Note that your validator must have a special testnet Weth ERC20 token to participate in challenges and must have approved the rollup and challenge manager contracts to spend it. To do so, you can use a special tool found [here](https://github.com/OffchainLabs/bold/blob/main/tools/fund-weth/main.go) or contact us to seed you with some of this test Weth funds.
+You can choose to run either an honest or an evil validator on Ethereum sepolia. Note that your validator must have a special testnet Weth ERC20 token to participate in challenges and must have approved the rollup and challenge manager contracts to spend it.
 
-You will also **need an Ethereum Sepolia RPC connection**. We recommend [Infura](https://infura.io) as an option or running your own Sepolia testnet node.
+You will also **need an Ethereum Sepolia RPC connection**. We recommend running your own Sepolia testnet node, as services such as infura run into rate limits.
+
+## Installation Requirements
+
+- Download 
 
 ## Honest Validator
 
-To run an honest validator, modify these values inside of `honest-validator/validator_config.json`
+First, fund your validator with the stake token needed on Sepolia:
 
-on line 2:
+```
+./fund-stake-token.sh --private-key $HONEST_PRIV_KEY --eth-rpc-endpoint $SEPOLIA_ENDPOINT
+```
 
-```json
-    "parent-chain": {
-        "connection": {
-            "url": "" // ADD YOUR L1 Sepolia HTTP Endpoint here
-        },
-        "wallet": {
-            "private-key": "" // ADD YOUR VALIDATOR PRIVATE KEY STRING HERE
-        }
-    },
+```
+./validator.sh --private-key $HONEST_PRIV_KEY --eth-rpc-endpoint $SEPOLIA_ENDPOINT
 ```
 
 ## Evil Validator
 
-To run an evil validator, modify these values inside of `evil-validator/evil_validator_config.json`
-
-on line 2:
-
-```json
-    "parent-chain": {
-        "connection": {
-            "url": "" // ADD YOUR L1 Sepolia HTTP Endpoint here
-        },
-        "wallet": {
-            "private-key": "" // ADD YOUR VALIDATOR PRIVATE KEY STRING HERE
-        }
-    },
+```
+./validator.sh --evil --private-key $EVIL_PRIV_KEY --eth-rpc-endpoint $SEPOLIA_ENDPOINT
 ```
 
 ### How Evil Validators Work

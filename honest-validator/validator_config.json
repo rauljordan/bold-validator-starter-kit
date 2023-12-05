@@ -1,7 +1,7 @@
 {
   "parent-chain": {
     "connection": {
-      "url": ""
+      "url": "ws://host.docker.internal:8546"
     },
     "wallet": {
       "private-key": ""
