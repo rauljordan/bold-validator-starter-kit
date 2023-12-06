@@ -41,5 +41,4 @@ docker run --network=host ghcr.io/rauljordan/bold-utils:latest mint-stake-token 
  --validator-priv-keys=$PRIV_KEY \
  --l1-endpoint=$SEPOLIA_ENDPOINT \
  --rollup-address=$ROLLUP_ADDR \
- --stake-token-address=$STAKE_TOKEN_ADDR \
- --gwei-to-deposit=$GWEI_TO_DEPOSIT
+ --stake-token-address=$STAKE_TOKEN_ADDR
