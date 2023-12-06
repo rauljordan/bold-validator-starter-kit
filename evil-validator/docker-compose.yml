@@ -9,6 +9,7 @@ services:
     volumes:
       - "evil-validator-data:/home/user/.arbitrum/local/nitro"
       - "config:/config"
+      - "caches:/caches"
       - type: bind
         source: ./val_jwt.hex
         target: /config/val_jwt.hex
@@ -44,3 +45,4 @@ services:
 volumes:
   evil-validator-data:
   config:
+  caches:
