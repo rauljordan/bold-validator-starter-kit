@@ -22,7 +22,7 @@
       "small-step-leaf-height": 128,
       "num-big-steps": 5,
       "validator-name": "honest",
-      "machine-leaves-cache-path": "/caches",
+      "machine-leaves-cache-path": "/tmp/machine-leaves-cache",
       "assertion-posting-interval-seconds": 30,
       "assertion-scanning-interval-seconds": 30,
       "assertion-confirming-interval-seconds": 60,
