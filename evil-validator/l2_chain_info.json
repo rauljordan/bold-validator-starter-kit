@@ -4,7 +4,9 @@
     "parent-chain-id": 11155111,
     "parent-chain-is-arbitrum": false,
     "sequencer-url": "",
+    "secondary-forwarding-target": "",
     "feed-url": "",
+    "secondary-feed-url": "",
     "das-index-url": "",
     "has-genesis-state": false,
     "chain-config": {
@@ -35,14 +37,16 @@
       }
     },
     "rollup": {
-      "bridge": "0xfeedd3ae4804b32cefac662e7ae43731f958f56c",
-      "inbox": "0x7b3c1eae1cf7d67266ccbd41dd8934a1d81cb6cd",
-      "sequencer-inbox": "0x821d6120534fcc8dd8617797da5abaf838202fa9",
-      "rollup": "0x8c45defb4adfb05c20450c5034012d2fd847494b",
+      "bridge": "0x0b8919fee55b5739a425a595c9efdb2279753c37",
+      "inbox": "0x33a5f0fd774b6f539f0f8ede8858703f5030e42f",
+      "sequencer-inbox": "0xff211c3e0e7d5d5f42eeb802d95f32799989885f",
+      "rollup": "0x6aa73a3aa24207a90bc855f515f35ee9c0e0925e",
+      "native-token": "0x0000000000000000000000000000000000000000",
+      "upgrade-executor": "0x0000000000000000000000000000000000000000",
       "validator-utils": "0x0000000000000000000000000000000000000000",
-      "validator-wallet-creator": "0x70b502805df4844ff362915b99877c4189acac60",
-      "stake-token": "0xfd532a851c00b936d56dc1f5c042477a8f77ac25",
-      "deployed-at": 4830015
+      "validator-wallet-creator": "0x5d652befbf1b6dc7c6f3bf8516a9b0accbe6d1f2",
+      "stake-token": "0x4ed03ca759d78e65885a5141acb304ee1a229f78",
+      "deployed-at": 4835296
     }
   }
 ]
