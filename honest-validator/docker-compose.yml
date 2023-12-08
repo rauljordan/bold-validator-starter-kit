@@ -10,6 +10,9 @@ services:
       - "validator-data:/home/user/.arbitrum/local/nitro"
       - "config:/config"
       - type: bind
+        source: ./caches
+        target: /caches
+      - type: bind
         source: ./val_jwt.hex
         target: /config/val_jwt.hex
       - type: bind
