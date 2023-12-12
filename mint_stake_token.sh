@@ -36,6 +36,8 @@ JSON_FILE="honest-validator/l2_chain_info.json"
 ROLLUP_ADDR=$(jq -r '.[0].rollup.rollup' $JSON_FILE)
 STAKE_TOKEN_ADDR=$(jq -r '.[0].rollup."stake-token"' $JSON_FILE)
 
+docker pull ghcr.io/rauljordan/nitro:bold
+
 # Running the Docker command
 docker run --network=host ghcr.io/rauljordan/bold-utils:latest mint-stake-token \
  --validator-priv-keys=$PRIV_KEY \

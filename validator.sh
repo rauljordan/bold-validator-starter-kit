@@ -51,6 +51,8 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
+docker pull ghcr.io/rauljordan/nitro:bold
+
 # Stop all running containers before deleting volumes
 docker-compose down
 
