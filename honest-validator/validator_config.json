@@ -20,7 +20,7 @@
       "block-challenge-leaf-height": 32,
       "big-step-leaf-height": 32,
       "small-step-leaf-height": 128,
-      "num-big-steps": 4,
+      "num-big-steps": 5,
       "validator-name": "honest",
       "machine-leaves-cache-path": "/tmp/machine-leaves-cache",
       "assertion-posting-interval-seconds": 30,
