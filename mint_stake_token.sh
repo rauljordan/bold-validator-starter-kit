@@ -2,6 +2,7 @@
 
 SEPOLIA_ENDPOINT=""
 PRIV_KEY=""
+BUMP_PRICE_PERCENT=""
 
 # Parsing command line arguments
 while [[ $# -gt 0 ]]; do
@@ -18,6 +19,11 @@ while [[ $# -gt 0 ]]; do
         shift # past argument
         shift # past value
         ;;
+        --bump-price-percent)
+        BUMP_PRICE_PERCENT="$2"
+        shift # past argument
+        shift # past value
+        ;;
         *)
         shift # past argument
         ;;
@@ -26,7 +32,7 @@ done
 
 # Check if the required arguments are set
 if [ -z "$SEPOLIA_ENDPOINT" ] || [ -z "$PRIV_KEY" ]; then
-    echo "Missing required arguments. Usage: $0 --eth-rpc-endpoint SEPOLIA_ENDPOINT --private-key PRIV_KEY"
+    echo "Missing required arguments. Usage: $0 --eth-rpc-endpoint SEPOLIA_ENDPOINT --private-key PRIV_KEY [--bump-price-percent BUMP_PRICE_PERCENT]"
     exit 1
 fi
 
@@ -43,4 +49,5 @@ docker run --network=host ghcr.io/rauljordan/bold-utils:latest mint-stake-token 
  --validator-priv-keys=$PRIV_KEY \
  --l1-endpoint=$SEPOLIA_ENDPOINT \
  --rollup-address=$ROLLUP_ADDR \
- --stake-token-address=$STAKE_TOKEN_ADDR
+ --stake-token-address=$STAKE_TOKEN_ADDR \
+ --bump-price-percent=${BUMP_PRICE_PERCENT:-100}
