@@ -26,7 +26,11 @@
       "assertion-posting-interval-seconds": 30,
       "assertion-scanning-interval-seconds": 30,
       "assertion-confirming-interval-seconds": 60,
-      "edge-tracker-wake-interval-seconds": 2
+      "edge-tracker-wake-interval-seconds": 2,
+      "api": true,
+      "api-host": "0.0.0.0",
+      "api-port": 7575,
+      "api-db-path": "/tmp/apisqlite.db"
     },
     "staker": {
       "dangerous": {

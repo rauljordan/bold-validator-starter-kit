@@ -4,6 +4,7 @@ services:
     pid: host
     image: ghcr.io/rauljordan/nitro:bold
     ports:
+      - "127.0.0.1:7257:7575"
       - "127.0.0.1:8247:8547"
       - "127.0.0.1:8248:8548"
     volumes:
