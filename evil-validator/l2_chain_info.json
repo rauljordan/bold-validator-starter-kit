@@ -37,16 +37,16 @@
       }
     },
     "rollup": {
-      "bridge": "0x3a73cea4ad231d43f859d519ba5e9357e702ac3f",
-      "inbox": "0x42d860fd27470e34e08e93f0d6c2127c68268d18",
-      "sequencer-inbox": "0xe240947c7d11b70db6df4db043806e934776fb84",
-      "rollup": "0x05c80443c9df701a566989318b8cc087874976ac",
+      "bridge": "0xe7fcf553147e71e8c72bfcba363dae40e3ec29e2",
+      "inbox": "0xe4240fb7e8cfc9f39e1bfd534177b361060aa618",
+      "sequencer-inbox": "0xe308baaf6238d135219349587d75321a4e2e785c",
+      "rollup": "0x55cb5a9a9d289ef7eb67ad9ee3b2602b9ad96b12",
       "native-token": "0x0000000000000000000000000000000000000000",
       "upgrade-executor": "0x0000000000000000000000000000000000000000",
       "validator-utils": "0x0000000000000000000000000000000000000000",
-      "validator-wallet-creator": "0xab0814fae321dfdd7868bd8520bcd23fdae8e142",
-      "stake-token": "0x4dc308d080961c5a03841f708ad0c2ce6b3e81fb",
-      "deployed-at": 5141457
+      "validator-wallet-creator": "0x598713d5a05348f4805e32327aaccbc1c32e5410",
+      "stake-token": "0x43564d5f80ba66774514ae52ea3394c44ce6fea3",
+      "deployed-at": 5144157
     }
   }
 ]
