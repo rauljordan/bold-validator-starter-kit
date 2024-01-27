@@ -19,7 +19,7 @@
       "mode": "make-mode",
       "block-challenge-leaf-height": 32,
       "big-step-leaf-height": 16384,
-      "small-step-leaf-height": 32768,
+      "small-step-leaf-height": 16384,
       "num-big-steps": 2,
       "validator-name": "honest",
       "machine-leaves-cache-path": "/tmp/machine-leaves-cache",
