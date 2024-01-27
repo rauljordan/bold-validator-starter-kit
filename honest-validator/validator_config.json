@@ -32,6 +32,11 @@
       "api-port": 7575,
       "api-db-path": "/tmp/apisqlite.db"
     },
+    "metrics": true,
+    "metrics-server": {
+      "addr": "0.0.0.0",
+      "port": "6070"
+    },
     "staker": {
       "dangerous": {
         "without-block-validator": false

@@ -7,6 +7,7 @@ services:
       - "127.0.0.1:7257:7575"
       - "127.0.0.1:8247:8547"
       - "127.0.0.1:8248:8548"
+      - "127.0.0.1:6170:6070"
     volumes:
       - "validator-data:/home/user/.arbitrum/local/nitro"
       - "config:/config"
