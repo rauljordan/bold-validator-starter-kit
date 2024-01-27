@@ -20,7 +20,7 @@ services:
       - type: bind
         source: ./l2_chain_info.json
         target: /config/l2_chain_info.json
-    command: --conf.file /config/evil_validator_config.json --http.port 8947 --http.api net,web3,arb,debug --ws.port 8948
+    command: --conf.file /config/evil_validator_config.json --http.port 8947 --http.api net,web3,arb,debug --ws.port 8948 --metrics
     depends_on:
       - evil_validation_node
 

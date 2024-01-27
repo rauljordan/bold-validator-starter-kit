@@ -20,7 +20,7 @@ services:
       - type: bind
         source: ./l2_chain_info.json
         target: /config/l2_chain_info.json
-    command: --conf.file /config/validator_config.json --http.port 8547 --http.api net,web3,arb,debug --ws.port 8548
+    command: --conf.file /config/validator_config.json --http.port 8547 --http.api net,web3,arb,debug --ws.port 8548 --metrics
     depends_on:
       - validation_node
 
