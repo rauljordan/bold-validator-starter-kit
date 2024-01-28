@@ -32,14 +32,14 @@
       "small-step-leaf-height": 2048,
       "num-big-steps": 4,
       "validator-name": "evil",
-      "machine-leaves-cache-path": "/tmp/machine-leaves-cache",
+      "machine-leaves-cache-path": "/home/user/.arbitrum/local/nitro/machine-leaves-cache",
       "assertion-posting-interval-seconds": 30,
       "assertion-scanning-interval-seconds": 30,
       "assertion-confirming-interval-seconds": 60,
       "edge-tracker-wake-interval-seconds": 2,
       "api-host": "0.0.0.0",
       "api-port": 7575,
-      "api-db-path": "/tmp/apisqlite.db"
+      "api-db-path": "/home/user/.arbitrum/local/nitro/apisqlite.db"
     },
     "staker": {
       "dangerous": {
