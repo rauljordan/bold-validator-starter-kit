@@ -28,7 +28,7 @@ if [[ -z "$PRIVATE_KEY" ]] || [[ -z "$ETH_RPC_ENDPOINT" ]]; then
     usage
 fi
 
-docker pull ghcr.io/rauljordan/nitro:bold
+docker pull ghcr.io/rauljordan/nitro:bold-feb-5
 
 # Define the directory based on mode
 VALIDATOR_DIR="honest-validator"
