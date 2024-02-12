@@ -32,21 +32,21 @@
         "AllowDebugPrecompiles": true,
         "DataAvailabilityCommittee": false,
         "InitialArbOSVersion": 11,
-        "InitialChainOwner": "0x7bcd4b1d62de88cee1c08b785aadc807c1914531",
+        "InitialChainOwner": "0x1c666db71922ac2ff58882708db695ef73f79316",
         "GenesisBlockNum": 0
       }
     },
     "rollup": {
-      "bridge": "0xaaf5cf32f88e9a4095f53a3455da453f484dbb34",
-      "inbox": "0x61ff10d5b61231dd38e6c17b46f47d586a251676",
-      "sequencer-inbox": "0xd323a4c1226ad730c70752249c57109faa11695a",
-      "rollup": "0xe04fc134acae6369711cc145d9e688330a9814ac",
+      "bridge": "0x240b5cb48ea043ecb1c1818c335b717b16624e7d",
+      "inbox": "0x3c51b1dea2a763c2802d790e06f1034c082e2c7d",
+      "sequencer-inbox": "0xcb3a9fc8c9a02f4b904e40840e9ec79bd50d1de6",
+      "rollup": "0x7524ce714bc066c0ee0d803f478712f6919cb985",
       "native-token": "0x0000000000000000000000000000000000000000",
       "upgrade-executor": "0x0000000000000000000000000000000000000000",
       "validator-utils": "0x0000000000000000000000000000000000000000",
-      "validator-wallet-creator": "0xe3cede69197b9b93391a90f9836fb7fcdc2b4e5d",
-      "stake-token": "0xd52e814d9a7f1a6f633792cc07f6c52c528436c3",
-      "deployed-at": 5241756
+      "validator-wallet-creator": "0x59db45ae3bb175521d46a385f46660b878ed6ca0",
+      "stake-token": "0xde05e47211b7cd96c6e33dbe9e07c0c90ce3814a",
+      "deployed-at": 5166941
     }
   }
 ]
