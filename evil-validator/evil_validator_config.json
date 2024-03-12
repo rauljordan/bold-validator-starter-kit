@@ -20,9 +20,13 @@
   },
   "execution": {
     "evil": true,
-    "evil-intercept-deposit-gwei": 1000000
+    "evil-intercept-deposit-gwei": 3300000,
+    "forwarding-target": "null"
   },
   "node": {
+    "dangerous": {
+      "disable-blob-reader": true
+    },
     "bold": {
       "enable": true,
       "evil": true,
@@ -79,7 +83,7 @@
     },
     "block-validator": {
       "evil": true,
-      "evil-intercept-deposit-gwei": 1000000,
+      "evil-intercept-deposit-gwei": 3300000,
       "validation-server": {
         "url": "ws://evil_validation_node:8999",
         "jwtsecret": "/config/val_jwt.hex"

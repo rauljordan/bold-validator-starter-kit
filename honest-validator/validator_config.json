@@ -18,7 +18,13 @@
     "addr": "0.0.0.0",
     "port": "6070"
   },
+  "execution": {
+    "forwarding-target": "null"
+  },
   "node": {
+    "dangerous": {
+      "disable-blob-reader": true
+    },
     "bold": {
       "enable": true,
       "mode": "make-mode",
